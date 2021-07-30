@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function (){
+    $(".imgGaleria").click(function (){
+    $(this).hide(1000);
+});
+
+$("#btMostrarTodas").click(function (){
+    $(".imgGaleria").show(1000);
+});
+});
+
+</script>
+
+<style>
+.imgGaleria {
+    width: 400px;
+    height: 300px;
+}
+</style>
+</head>
+<body>
+    <button id="btMostrarTodas">Mostrar Todas!</button>
+
+    <br />
+
+    <img class="imgGaleria" src="carro1.jpeg">
+    <img class="imgGaleria" src="carro2.jpg">
+    <img class="imgGaleria" src="carro3.jpg">
+    <br>
+    <img class="imgGaleria" src="carro4.png">
+    <img class="imgGaleria" src="carro5.jpg">
+    <img class="imgGaleria" src="carro6.jpeg">
+</body>
